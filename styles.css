@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--white);
+}
+
+/* variables */
+
+:root{
+    --dark-grey: #979797;
+    --light-grey: #D8D8D8;
+    --green: #4EE1A0;
+    --light-black: #242424;
+    --white: #fff5ee;
+    --black: #151515;
+}
+
+/* global styling */
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-to-center{
+    text-align: center;
+}
+
+/* navbar */
+
+nav{
+    padding: 1.25rem;
+    background-color: var(--black);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.burguer-menu-icon{
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+.burguer-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.burguer-btn:hover{
+    cursor: pointer;
+}
+
+.fa-clapperboard{
+    font-size: 1.25rem;
+}
+
+    /* main */
+
+    /** section */
+
+        /* banner */
+.fa-play{
+    color: var(--light-grey);
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.main-section{
+    height: 80vh;
+    background-color: var(--light-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    padding: 1rem;
+    letter-spacing: 1.2px;
+}
+
+.display{
+    border: 1px dashed red;
+    height: 50vh;
+    width: 80%;
+    margin: 2rem 0;
+    background-color: var(--light-black);
+}
+
+
+/* aside */
+.sideMenu{
+    background-color: var(--black);
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    height: 50vh;
+    width: 50vw;
+    transform: translateX(-100%);
+    transition: transform 750ms;
+}
+
+.active{
+    transform: translateX(0);
+}
+
+.sideMenu h2{
+    padding: 1rem;
+}
+
+.anime-btn{
+    display: block;
+    background-color: transparent;
+    color: var(--white);
+    padding: 1rem;
+    border: transparent;
+}
+
+.anime-btn:active{
+    border-left: 2px solid var(--green);
+}
+
+/* footer */
+footer{
+    height: 20vh;
+    background-color:var(--black);
+}
+
+
+
+
