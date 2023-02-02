@@ -6,6 +6,7 @@
 
 body{
     color: var(--white);
+    background-color: var(--light-black);
 }
 
 /* variables */
@@ -38,25 +39,15 @@ nav{
     border-bottom: 1px solid var(--light-grey);
 }
 
-.burguer-menu-icon{
-    color: var(--white);
-    font-size: 1.25rem;
-}
-
-.burguer-btn{
-    border: none;
-    background-color: transparent;
-}
-
-.burguer-btn:hover{
-    cursor: pointer;
-}
-
 .fa-clapperboard{
     font-size: 1.25rem;
 }
 
     /* main */
+
+main{
+    padding: 0 1.25rem;
+}
 
     /** section */
 
@@ -81,45 +72,60 @@ h1{
     letter-spacing: 1.2px;
 }
 
-.display{
-    border: 1px dashed red;
-    height: 50vh;
-    width: 80%;
-    margin: 2rem 0;
-    background-color: var(--light-black);
-}
-
-
-/* aside */
-.sideMenu{
-    background-color: var(--black);
-    position: absolute;
-    left: 0;
-    z-index: 100;
-    height: 50vh;
-    width: 50vw;
-    transform: translateX(-100%);
-    transition: transform 750ms;
-}
-
-.active{
-    transform: translateX(0);
-}
-
-.sideMenu h2{
-    padding: 1rem;
-}
-
-.anime-btn{
+.searchInput{
     display: block;
-    background-color: transparent;
-    color: var(--white);
-    padding: 1rem;
-    border: transparent;
+    margin: 0 auto;
+    padding: 0.15rem;
+    outline-color: var(--green);
+    width: 14rem;
 }
 
-.anime-btn:active{
-    border-left: 2px solid var(--green);
+
+
+.buttons-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+button{
+    width: 4rem;
+    padding: 0.15rem;
+    margin-inline: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.selected{
+    margin: 1rem;
+}
+
+.display{
+    height: auto;
+    width: 90%;
+    margin: 1rem 0;
+    background-color: var(--light-black);
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    overflow-y: scroll;
+}
+
+.item{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+figcaption{
+    max-width: 150px;
+    margin: 0 auto;
 }
 
 /* footer */

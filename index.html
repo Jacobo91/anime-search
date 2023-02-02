@@ -12,7 +12,7 @@
 <body>
     
     <nav class="flex-space-between">
-        <button class="burguer-btn"><i class="fa-solid fa-bars burguer-menu-icon"></i></button>
+        <span>Anime Search</span>
         <i class="fa-solid fa-clapperboard"></i>
     </nav>
 
@@ -25,32 +25,27 @@
 
             <h1>Select a Title</h1>
         
-            <form action="">
-                <select name="titles" id="titles" class="selected">
-                    <option value="full%20metal%20alchemist">Full Metal Alchemist</option>
-                    <option value="naruto">Naruto</option>
-                    <option value="jujutsu%20kaisen">Jujutsi Kaisen</option>
-                    <option value="dragon%20ball%20z">Dragon Ball Z</option>
-                </select>
+            <form action=""> 
+                    <input type="text" name="anime-title" id="searchInput" class="searchInput text-to-center">
+                
+                    <div class="buttons-wrapper">
+                        <button class="search-btn text-to-center">Search</button>
+                        <button class="clear-btn text-to-center">Clear</button>
+                    </div>
             </form>
-
+            
             <article class="display">
-
+<!--
+                <div class="item">
+                    <a href="#">
+                        <img src="https://cdn.myanimelist.net/images/anime/1493/116732.jpg" alt="">
+                        <h3>title</h3>
+                    </a>
+                </div>
+-->
             </article>
 
-            <aside class="sideMenu">
-                <h2 class="text-to-center">Animes</h2>
-                <ul>
-                    <button class="anime-btn">Full Metal Alchemist</button>
-                    <button class="anime-btn">Naruto</button>
-                    <button class="anime-btn">Jujutsu Kaise</button>
-                    <button class="anime-btn">Dragon Ball</button>
-                    <button class="anime-btn">Death Note</button>
-                </ul>
-            </aside>
-
         </section>
-
 
 
 
